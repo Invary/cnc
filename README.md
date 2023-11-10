@@ -1,6 +1,6 @@
 # How to setup/use CNC3040 with GRBL
 
-## About
+## Aboutã€€
 
 Smaller CNCs such as the CNC3018 use GRBL as the controller. <br />
 However, for CNC3040 and above, Mache 3/4, which is older in design and less user-friendly, is often used. Here we show how to build a CNC3040 system with GRBL/wifi. <br />
@@ -53,11 +53,11 @@ If connection failed, try another URL **`http://192.168.100.104/`** , **`http://
 
 <br />
 
-## Motors Wiring
+## Motors wiring
 
 GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), is equipped with an EPS32 and has a standard [FluidNC](https://github.com/bdring/FluidNC)(GRBL for ESP32) firmware burned in. <br />
 
-* PUL/DIR/EN pins are 5V high/low output. DO NOT connect to high voltage power supply. <br />
+* PUL/DIR/EN pins are 5V high/low output. DO NOT connect to over 5V voltage power supply. <br />
 * High voltage of PWM-OUT is adjustable. <br />
 * Both 24V pins are directly connected. Therefore, they can be used for both IN and OUT. <br />
 
@@ -118,7 +118,7 @@ Automatic control
 
 <br />
 
-## GRBL setting
+## GRBL/[FluidNC](https://github.com/bdring/FluidNC) setting
 
 To change the GRBL configuration, follow the steps below. <br />
 
@@ -128,7 +128,7 @@ To change the GRBL configuration, follow the steps below. <br />
 4. Restart GRBL board <br />
 <br />
 
-Here is my [CNC3040Z configuration file](https://github.com/Invary/cnc/cnc3040z.yaml) <br />
+Here is my [CNC3040Z configuration file](https://github.com/Invary/cnc/blob/main/cnc3040z.yaml) <br />
 
 The various port settings on the GRBL board are not problm as default. <br />
 The following items are important <br />
@@ -169,9 +169,9 @@ Stand-alone processing is available by uploading a g-code file in microSD. Uploa
 1. Access GBRL board with browser. <br />
 2. Upload g-code file to microSD. File extension is like **`.nc`**. <br />
 3. Set **`GRBL Reports:`** to **`Auto`** <br />
-4. Set endmil to the spindle. <br />
+4. Set endmill to the spindle. <br />
 5. Move spindle head to start position. <br />
-6. Press **`ƒÆXYZABC`** button, work coordinates set to zero. <br />
+6. Press **`Î¸XYZABC`** button, work coordinates set to zero. <br />
 7. Start CNC machining. <br />
 
 If you want to abort, press pause and refresh button. <br />
@@ -187,7 +187,7 @@ It supports HID/serial protocol. So you can control CNC via serial port. <br />
 
 ## Serial connected CNC machining via wifi
 
-GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), supports multiple wireless connection methods. <br />
+GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), supports multiple wireless protocol. <br />
 So you can control CNC via wifi, and by using a wireless-serial port bridge with virtual serial port, it can be controlled like as wired connected CNC. <br />
 
 * Bluetooth/serial <br />
