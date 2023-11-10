@@ -19,7 +19,7 @@ Required <br/>
 * 1 motor. Mono 8mm shaft NEMA23 motor, [23HS5628-8mm](https://s.click.aliexpress.com/e/_DmWwv0B) for Y axis <br />
 * 3 coupling, [8mm x 8mm](https://s.click.aliexpress.com/e/_DkbfAH5) <br />
 * 3 driver. [DM542](https://s.click.aliexpress.com/e/_DnLqMan) <br />
-* Spindle. [BLDC 300W spindle](https://s.click.aliexpress.com/e/_DeVVoub) with holder, speed meter and ER11 <br />
+* Spindle. [BLDC 300W spindle](https://s.click.aliexpress.com/e/_DeVVoub) with driver, holder, speed meter and ER11 <br />
 * GRBL board. [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt) <br />
 * Power unit. [24V 360W-Quiet](https://s.click.aliexpress.com/e/_DdIBWQr) for motors <br />
 * Power unit. [36V 400W-Quiet](https://s.click.aliexpress.com/e/_DdIBWQr) for spindle <br />
@@ -101,11 +101,12 @@ In other words, the 25600 steps in DM542 are 5mm, so 5120 steps/mm. <br />
 
 ## Spindle wiring
 
-[300W spindle](https://s.click.aliexpress.com/e/_DeVVoub) is brushless spindle motor. <br />
-RPM can be manually set by volume or automatically adjusted by G-CODE. <br />
+
+[WS55-180](https://s.click.aliexpress.com/e/_DeVVoub) is brushless spindle motor driver. <br />
+RPM can be manually set by volume (10k ohm) or automatically adjusted by G-CODE. <br />
 
 For automatic control, turn the PWM-ADJ volume to 0-10V PWM output before wiring. <br />
-To adjust, access GRBL board with a browser. Set speed **`1000rpm`** in spindle tab and press the **`On Fwd`** button. Then voltage is output to PWM-OUT pin. The voltage should be 10V. <br />
+To adjust, access GRBL board with a browser. Set speed value **`1000`** in spindle tab and press the **`On Fwd`** button. Then voltage is output to PWM-OUT pin. Turn the PWM-ADJ volume so that the output is 10V. <br />
 
 The direction of rotation of the motor is important. Be sure to set correctly by change order U/V/W to U/W/V, etc., if the rotation is in reverse. <br />
 
@@ -122,10 +123,11 @@ Automatic control
 
 To change the GRBL configuration, follow the steps below. <br />
 
-1. Download the configuration file from GRBL board to your PC <br />
-2. Edit the configuration file on your PC <br />
-3. Upload the file to GRBL board <br />
-4. Restart GRBL board <br />
+1. Access GRBL board with browser <br />
+2. Download the configuration file from GRBL board to your PC <br />
+3. Edit the configuration file on your PC <br />
+4. Upload the file to GRBL board <br />
+5. Restart GRBL board <br />
 <br />
 
 Here is my [CNC3040Z configuration file](https://github.com/Invary/cnc/blob/main/cnc3040z.yaml) <br />
