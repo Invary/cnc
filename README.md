@@ -150,7 +150,94 @@ Just add **`:low`** to reverse rotation, ex. **`direction_pin: I2SO.4`** to **`d
 
 <br />
 
+## Offline controller
+
+GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), has no port for offline controller. <br />
+But you can control via wifi. Although it is not an offline controller, it can be used like an offline controller. <br />
+
+1. With smart phone, access GBRL board with browser. <br />
+2. Open **`Tablet`** tab. <br />
+3. You can control CNC via wifi. <br />
+
+<br />
+
+## Stand alone CNC machining
+
+GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), has a microSD slot. <br />
+Stand-alone processing is available by uploading a g-code file in microSD. Upload can do via wifi. <br />
+
+1. Access GBRL board with browser. <br />
+2. Upload g-code file to microSD. File extension is like **`.nc`**. <br />
+3. Set **`GRBL Reports:`** to **`Auto`** <br />
+4. Set endmil to the spindle. <br />
+5. Move spindle head to start position. <br />
+6. Press **`É∆XYZABC`** button, work coordinates set to zero. <br />
+7. Start CNC machining. <br />
+
+If you want to abort, press pause and refresh button. <br />
+
+<br />
+
+## Serial connected CNC machining
+
+GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), has a microUSB connector. <br />
+It supports HID/serial protocol. So you can control CNC via serial port. <br />
+
+<br />
+
+## Serial connected CNC machining via wifi
+
+GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), supports multiple wireless connection methods. <br />
+So you can control CNC via wifi, and by using a wireless-serial port bridge with virtual serial port, it can be controlled like as wired connected CNC. <br />
+
+* Bluetooth/serial <br />
+* WebSocket via wifi <br />
+* Telnet via wifi <br />
+
+Bluetooth is for exclusive use with wifi. Therefore, enabling bluetooth is not recommended since wifi is not available. <br />
+
+WebSocket is also used for control by browsers. This is not recommended as the connection is a bit unstable and can be dropped. <br />
+
+So telnet/wifi is recommended. <br />
+
+The following is an example of a setup is with [Candle](https://github.com/Denvi/Candle) for windows. <br />
+
+1. Install virtual serial port [com0com](https://sourceforge.net/projects/com0com/files/com0com/3.0.0.0/). <br />
+2. In setup of com0com, check **`enumulate baudrate`** and add one pair of virtual serial port, COM19 & COM20. <br />
+3. [Download](https://github.com/Invary/IvyTcp2Serial/releases) latest version of [IvyTcp2Serial](https://github.com/Invary/IvyTcp2Serial/) and extract. <br />
+4. Create shortcut file of **`IvyTcp2Serial.exe`** .<br />
+5. Right click shortcut file and open property. <br />
+6. Edit shortcut link **`IvyTcp2Serial.exe`** to **`IvyTcp2Serial.exe /server=192.168.100.101 /port=23 /comport=COM19 /baudrate=115200 /parity=none /stopbits=1`**. IP address and comport should be changed according to your environment. <br />
+7. Execute IvyTcp2Serial with serial, and connected to CNC via wifi/telnet. <br />
+8. Execute Candle with serial port like **`COM20`**. <br />
+9. At first, send command to CNC, **`$Report/Interval=50`**. This is because the default frequency of coordinate report is low. <br />
+10. Now you can control CNC via wifi with Candle. <br />
+
+<br />
 
 
 
 
+
+
+<br />
+
+<br />
+
+<br />
+
+
+<br />
+
+##  Suggestions and feedback
+If you have any idea or suggestion, please add a github issue.
+
+<br />
+
+
+
+<br />
+<br />
+<br />
+
+#### Copyright (c) Invary
