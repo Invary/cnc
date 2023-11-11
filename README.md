@@ -233,7 +233,7 @@ The required length of the X axis drag chain is about 60cm. <br />
 Stl file of [drag chain end cap for X axis type1](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_x1.stl)
 ![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_x1_960x670.png)
 
-Stl file of [drag chain end cap for X axis type2](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_x2.stl)
+Stl file of [drag chain end cap for X axis type2](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_x2.stl) <br />
 Multiple holes are for cable tie [3x100mm](https://s.click.aliexpress.com/e/_DB07H2F) <br />
 ![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_x2_960x752.png)
 
@@ -252,8 +252,20 @@ Stl file of [cable adapter between Y and X](https://github.com/Invary/cnc/blob/m
 
 ![drag chain end cap for Y, cable adapter between Y and X](https://raw.githubusercontent.com/Invary/cnc/main/img/DSC06147_960x320.JPG)
 
-
 <br />
+
+## Power unit terminal guard
+
+This CNC use 2 power units, [24V 360W-Quiet](https://s.click.aliexpress.com/e/_DdIBWQr) and [36V 400W-Quiet](https://s.click.aliexpress.com/e/_DdIBWQr). <br />
+This power unit is easy to short-circuit because the terminals are exposed. Create a protective cover. <br />
+
+Stl file of [Power unit terminal guard](https://github.com/Invary/cnc/blob/main/model/3dprint/power_unit_guard.stl)
+![Power unit guard](https://raw.githubusercontent.com/Invary/cnc/main/img/power_unit_guard_960x500.png)
+
+![Power unit guard](https://raw.githubusercontent.com/Invary/cnc/main/img/DSC06148_480x320.JPG)
+
+
+
 
 <br />
 
