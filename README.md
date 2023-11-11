@@ -32,7 +32,8 @@ Optional <br />
 * XH2.54 connector. [230Pcs XH2.54](https://s.click.aliexpress.com/e/_Dmz7UOf) for motors <br />
 * Ferrule connector. [Many types of 340pcs](https://s.click.aliexpress.com/e/_DCKdpaT) for GRBL board and drivers <br />
 * Terminal connector. [OT-3A](https://s.click.aliexpress.com/e/_DBOf5Yn) for power units <br />
-* Drag chain. [10x20mm 2m](https://s.click.aliexpress.com/e/_DDre0dV) <br />
+* Drag chain. [inner size 10x20mm 2m](https://s.click.aliexpress.com/e/_DDre0dV) <br />
+* Cable tie. [3x100mm](https://s.click.aliexpress.com/e/_DB07H2F) <br />
 * 3D printer <br />
 
 ** Shielded cable is required. Unshielded cables will cause motor errors such as stalling. <br />
@@ -192,9 +193,9 @@ It supports HID/serial protocol. So you can control CNC via serial port. <br />
 GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), supports multiple wireless protocol. <br />
 So you can control CNC via wifi, and by using a wireless-serial port bridge with virtual serial port, it can be controlled like as wired connected CNC. <br />
 
-* Bluetooth/serial <br />
-* WebSocket via wifi <br />
-* Telnet via wifi <br />
+* Bluetooth/serial (not recommended) <br />
+* WebSocket via wifi (not recommended) <br />
+* Telnet via wifi (recommended) <br />
 
 Bluetooth is for exclusive use with wifi. Therefore, enabling bluetooth is not recommended since wifi is not available. <br />
 
@@ -217,9 +218,40 @@ The following is an example of a setup is with [Candle](https://github.com/Denvi
 
 <br />
 
+## Cable management
+
+The [CNC3040Z](https://s.click.aliexpress.com/e/_DC8N8X1) has several screw holes for cable management and comes with an adapter to secure the drag chain. <br />
+However, we don't know which drag chain would fit perfectly. So, we made our own adapter with 3D printer. <br />
+
+Usable drag chain is [inner size 10x20mm](https://s.click.aliexpress.com/e/_DDre0dV), close type. <br />
+Since there are slight differences in size between drag chain products, it is better to design your own 3D printed parts without using stl. <br />
+
+![Dimension for drag chain](https://raw.githubusercontent.com/Invary/cnc/main/img/dimension_dragchain_hole_960x687.png)
+
+The required length of the X axis drag chain is about 60cm. <br />
+Multiple holes are for cable tie [3x100mm](https://s.click.aliexpress.com/e/_DB07H2F) <br />
+
+Stl file of [drag chain end cap for X axis type1](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_x1.stl)
+![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_x1_960x670.png)
+
+Stl file of [drag chain end cap for X axis type2](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_x2.stl)
+![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_x2_960x752.png)
+
+![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/DSC06139_960x320.JPG)
 
 
+The required length of the Y axis drag chain is about 70cm. <br />
+The gap between the stage and the sides is 26.5mm, which is a little narrow for a drag chain. Therefore, it is fixed in an irregular manner. <br />
 
+Stl file of [drag chain end cap for Y axis](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_y.stl)
+![drag chain end cap for Y](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_y_960x597.png)
+
+M5 screw holes are provided near the Y-axis motor. This is used to secure the cable between Y-axis and X-axis. <br />
+
+Stl file of [cable adapter between Y and X](https://github.com/Invary/cnc/blob/main/model/3dprint/cable_adapter.stl)
+![cable adapter between Y and X](https://raw.githubusercontent.com/Invary/cnc/main/img/cable_adapter_960x519.png)
+
+![drag chain end cap for Y, cable adapter between Y and X](https://raw.githubusercontent.com/Invary/cnc/main/img/DSC06147_960x320.JPG)
 
 
 <br />
