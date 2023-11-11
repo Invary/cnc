@@ -229,25 +229,24 @@ Since there are slight differences in size between drag chain products, it is be
 ![Dimension for drag chain](https://raw.githubusercontent.com/Invary/cnc/main/img/dimension_dragchain_hole_960x687.png)
 
 The required length of the X axis drag chain is about 60cm. <br />
-Multiple holes are for cable tie [3x100mm](https://s.click.aliexpress.com/e/_DB07H2F) <br />
 
 Stl file of [drag chain end cap for X axis type1](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_x1.stl)
 ![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_x1_960x670.png)
 
 Stl file of [drag chain end cap for X axis type2](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_x2.stl)
+Multiple holes are for cable tie [3x100mm](https://s.click.aliexpress.com/e/_DB07H2F) <br />
 ![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_x2_960x752.png)
 
 ![drag chain end cap for X](https://raw.githubusercontent.com/Invary/cnc/main/img/DSC06139_960x320.JPG)
 
 
 The required length of the Y axis drag chain is about 70cm. <br />
-The gap between the stage and the sides is 26.5mm, which is a little narrow for a drag chain. Therefore, it is fixed in an irregular manner. <br />
+The gap between the stage and the side panel is 26.5mm, which is a little narrow for a drag chain. Therefore, it is fixed in an irregular manner. <br />
 
 Stl file of [drag chain end cap for Y axis](https://github.com/Invary/cnc/blob/main/model/3dprint/dragchain_end_y.stl)
-![drag chain end cap for Y](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_y_960x597.png)
+![drag chain end cap for Y](https://raw.githubusercontent.com/Invary/cnc/main/img/dragchain_end_y_960x731.png)
 
 M5 screw holes are provided near the Y-axis motor. This is used to secure the cable between Y-axis and X-axis. <br />
-
 Stl file of [cable adapter between Y and X](https://github.com/Invary/cnc/blob/main/model/3dprint/cable_adapter.stl)
 ![cable adapter between Y and X](https://raw.githubusercontent.com/Invary/cnc/main/img/cable_adapter_960x519.png)
 
