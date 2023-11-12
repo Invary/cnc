@@ -220,7 +220,7 @@ The following is an example of a setup is with [Candle](https://github.com/Denvi
 
 ## Cable management
 
-The [CNC3040Z](https://s.click.aliexpress.com/e/_DC8N8X1) has several screw holes for cable management and comes with an adapter to secure the drag chain. <br />
+[CNC3040Z](https://s.click.aliexpress.com/e/_DC8N8X1) has several screw holes for cable management and comes with an adapter to secure the drag chain. <br />
 However, we don't know which drag chain would fit perfectly. So, we made our own adapter with 3D printer. <br />
 
 Usable drag chain is [inner size 10x20mm](https://s.click.aliexpress.com/e/_DDre0dV), close type. <br />
@@ -291,15 +291,32 @@ Parts list
 
 ![knob spacer](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial5_960x292.png)
 
+<br />
 
+## 20 alminium profile stage
+
+[CNC3040Z](https://s.click.aliexpress.com/e/_DC8N8X1) has 360x545mm stage using 3 pcs of [20120](https://s.click.aliexpress.com/e/_DnaMZth). <br />
+This stage is common in CNC, but has some disadvantages such as wide groove spacing, necessity to use big screw for T-nut, etc. <br />
+Therefore, change to allow the use of 20 alminium profile tools. <br />
+
+![stage](https://raw.githubusercontent.com/Invary/cnc/main/img/stage_480x280.png)
+
+Parts list
+- x3 [20100 450mm](https://s.click.aliexpress.com/e/_DnaMZth)
+- x12 [2020 corner bracket](https://s.click.aliexpress.com/e/_DkBTLRN)
+- x12 [T-nut M6](https://s.click.aliexpress.com/e/_DB4cpVZ)
+- x24 [M3, T slide nut 20](https://s.click.aliexpress.com/e/_DdnWJB5)
+- x24 M6 screw
+
+<br />
 
 
 
 <br />
-
 <br />
-
-
+<br />
+<br />
+<br />
 <br />
 
 ##  Suggestions and feedback
