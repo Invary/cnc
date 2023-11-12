@@ -308,6 +308,9 @@ Parts list
 - x24 [M3, T slide nut 20](https://s.click.aliexpress.com/e/_DdnWJB5)
 - x24 M6 screw
 
+[20100 450mm](https://s.click.aliexpress.com/e/_DnaMZth) has has holes in the side. The diameter of this hole is 4.2mm or 5.0mm depend on products. Use M5 or M6 tap to make threaded hole. <br />
+
+
 <br />
 
 
