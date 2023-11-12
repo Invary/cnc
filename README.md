@@ -110,12 +110,13 @@ For automatic control, turn the PWM-ADJ volume to 0-10V PWM output before wiring
 To adjust, access GRBL board with a browser. Set speed value **`1000`** in spindle tab and press the **`On Fwd`** button. Then voltage is output to PWM-OUT pin. Turn the PWM-ADJ volume so that the output is 10V. <br />
 
 The direction of rotation of the motor is important. Be sure to set correctly by change order U/V/W to U/W/V, etc., if the rotation is in reverse. <br />
+![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/spindle_direction_960x540.png)
 
 
-Manual control
+- Manual control
 ![Manual control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/connection_spindle_manual_960x641.png)
 
-Automatic control
+- Automatic control
 ![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/connection_spindle_auto_960x892.png)
 
 <br />
