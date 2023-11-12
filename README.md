@@ -267,12 +267,21 @@ Stl file of [Power unit terminal guard](https://github.com/Invary/cnc/blob/main/
 
 <br />
 
-## Manual dial
+## Manual axis dial
 
 Dials on dual shaft motor make manual position adjustment easier. <br />
 So, for X/Z axis, It is better to use dual shaft motors, [23HS5628-SZ](https://s.click.aliexpress.com/e/_Dlx0W5N). <br />
 
-![NEMA23 with dial](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial1_960x839.png)
+![NEMA23 with dial](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial1_480x420.png)
+
+Parts list
+- x1 dual 8mm shaft NEMA23 motor, [23HS5628-SZ](https://s.click.aliexpress.com/e/_Dlx0W5N)
+- x1 dial body, CNC machined 6mm thick MDF, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial2.stl)
+- x1 dial adapter, 3D printed, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial4.stl)
+- x6 spacer for knob, CNC machined 3mm thick acrylic board, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial5.stl)
+- x4 M3-10mm screw
+- x3 M3-12mm screw
+- x7 M3 nut
 
 ![dial](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial2_960x732.png)
 
@@ -281,15 +290,6 @@ So, for X/Z axis, It is better to use dual shaft motors, [23HS5628-SZ](https://s
 ![dial adapter](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial4_960x517.png)
 
 ![dial spacer](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial5_960x292.png)
-
-Parts list
-- x1 dual 8mm shaft NEMA23 motor, [23HS5628-SZ](https://s.click.aliexpress.com/e/_Dlx0W5N)
-- x1 dial body, CNC machined 6mm thickMDF, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial2.stl)
-- x1 dial adapter, printed, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial4.stl)
-- x6 spacer for knob, CNC machined 3mm thick acrylic board, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial5.stl)
-- x4 M3-10mm screw
-- x3 M3-12mm screw
-- x7 M3 nut
 
 
 
