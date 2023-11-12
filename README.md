@@ -102,15 +102,14 @@ In other words, the 25600 steps in DM542 are 5mm, so 5120 steps/mm. <br />
 
 ## Spindle wiring
 
-
 [WS55-180](https://s.click.aliexpress.com/e/_DeVVoub) is brushless spindle motor driver. <br />
 RPM can be manually set by volume (10k ohm) or automatically adjusted by G-CODE. <br />
 
 For automatic control, turn the PWM-ADJ volume to 0-10V PWM output before wiring. <br />
 To adjust, access GRBL board with a browser. Set speed value **`1000`** in spindle tab and press the **`On Fwd`** button. Then voltage is output to PWM-OUT pin. Turn the PWM-ADJ volume so that the output is 10V. <br />
 
-The direction of rotation of the motor is important. Be sure to set correctly by change order U/V/W to U/W/V, etc., if the rotation is in reverse. <br />
-![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/spindle_direction_960x540.png)
+The direction of spindle rotation is important. Be sure to set correctly by change order U/V/W to U/W/V, etc., if in reverse. <br />
+![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/spindle_direction_480x270.png)
 
 
 - Manual control
@@ -168,7 +167,7 @@ But you can control via wifi. Although it is not an offline controller, it can b
 ## Stand alone CNC machining
 
 GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), has a microSD slot. <br />
-Stand-alone processing is available by uploading a g-code file in microSD. Upload can do via wifi. <br />
+Stand-alone processing is available by uploading g-code file in microSD. Upload can do via wifi. <br />
 
 1. Access GBRL board with browser. <br />
 2. Upload g-code file to microSD. File extension is like **`.nc`**. <br />
