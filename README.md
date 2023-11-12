@@ -310,10 +310,25 @@ Parts list
 
 [20100 450mm](https://s.click.aliexpress.com/e/_DnaMZth) has has holes in the side. The diameter of this hole is 4.2mm or 5.0mm, depending on products. Use M5 or M6 tap to make threaded hole. <br />
 
-
 <br />
 
+## GRBL board's chips
 
+GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt) is not open source device. Threfore, schematic and specification are unknown.<br />
+Looking at the PCB... there is some famous chips. We have not followed the schematic, but we predict the approximate function from PCB layout. <br />
+
+- ESP32-WROOM-32: MPU module
+- 74AHT595: 8bit shift register. X/Y/Z/A/B/C and maybe SPIN/MIST out is through this chip
+- MC34063: DC-DC converter, 1.5A. Maybe for 5V-OUT
+- AMS1117-3.3: 3.3V regulator. ESP32's power supply
+- CH340K: USB-Serial bridge
+- LM358 (up): opamp. Unknown
+- LM358 (down): opamp. Maybe for PWM-OUT
+- EL3H7: photo coupler. LIMIT/PROBE and maybe PWM for laser is isolated by this chip
+- LM2576S: DC-DC converter, 3A. Maybe for laser power supply
+- 20P06: P-ch power MOSFET. Unknown
+
+![stage](https://raw.githubusercontent.com/Invary/cnc/main/img/grbl_board_chip_960x1396.png)
 
 <br />
 <br />
