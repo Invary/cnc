@@ -272,24 +272,24 @@ Stl file of [Power unit terminal guard](https://github.com/Invary/cnc/blob/main/
 Knob on dual shaft motor make manual position adjustment easier. <br />
 So, for X/Z axis, It is better to use dual shaft motors, [23HS5628-SZ](https://s.click.aliexpress.com/e/_Dlx0W5N). <br />
 
-![NEMA23 with knob](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial1_480x328.png)
+![NEMA23 with knob](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_knob1_480x328.png)
 
 Parts list
 - x1 dual 8mm shaft NEMA23 motor, [23HS5628-SZ](https://s.click.aliexpress.com/e/_Dlx0W5N)
-- x1 knob body, CNC machined 6mm thick MDF, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial2.stl)
-- x1 knob adapter, 3D printed, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial4.stl)
-- x6 spacer for small knob, CNC machined 3mm thick acrylic board, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_dial5.stl)
+- x1 knob body, CNC machined 6mm thick MDF, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_knob2.stl)
+- x1 knob adapter, 3D printed, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_knob4.stl)
+- x6 spacer for small knob, CNC machined 3mm thick acrylic board, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/nema23_with_knob5.stl)
 - x4 M3-10mm screw
 - x3 M3-12mm screw
 - x7 M3 nut
 
-![knob](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial2_960x732.png)
+![knob](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_knob2_960x732.png)
 
-![knob body](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial3_960x500.png)
+![knob body](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_knob3_960x500.png)
 
-![knob adapter](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial4_960x517.png)
+![knob adapter](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_knob4_960x517.png)
 
-![knob spacer](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_dial5_960x292.png)
+![knob spacer](https://raw.githubusercontent.com/Invary/cnc/main/img/nema23_with_knob5_960x292.png)
 
 <br />
 
@@ -297,7 +297,7 @@ Parts list
 
 [CNC3040Z](https://s.click.aliexpress.com/e/_DC8N8X1) has 360x545mm stage using 3 pcs of [20120](https://s.click.aliexpress.com/e/_DnaMZth). <br />
 This stage is common in CNC, but has some disadvantages such as wide groove spacing, necessity to use big screw for T-nut, etc. <br />
-Therefore, change to allow the use of 20 alminium profile tools. <br />
+Therefore, change to user friendly 20 alminium profile stage. <br />
 
 ![stage](https://raw.githubusercontent.com/Invary/cnc/main/img/stage_480x280.png)
 
@@ -308,7 +308,7 @@ Parts list
 - x24 [M3, T slide nut 20](https://s.click.aliexpress.com/e/_DdnWJB5)
 - x24 M6 screw
 
-[20100 450mm](https://s.click.aliexpress.com/e/_DnaMZth) has has holes in the side. The diameter of this hole is 4.2mm or 5.0mm depend on products. Use M5 or M6 tap to make threaded hole. <br />
+[20100 450mm](https://s.click.aliexpress.com/e/_DnaMZth) has has holes in the side. The diameter of this hole is 4.2mm or 5.0mm, depending on products. Use M5 or M6 tap to make threaded hole. <br />
 
 
 <br />
