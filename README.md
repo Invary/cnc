@@ -119,8 +119,9 @@ The direction of spindle rotation is important. Be sure to set correctly by chan
 ![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/connection_spindle_auto_960x892.png)
 
 - Value in G-CODE vs RPM
+
 | value |  rpm  |
-|------:|------:|
+| ----: | ----: |
 |   200 |  2200 |
 |   300 |  3800 |
 |   400 |  5400 |
@@ -130,6 +131,7 @@ The direction of spindle rotation is important. Be sure to set correctly by chan
 |   800 | 10200 |
 |   900 | 11300 |
 |  1000 | 12000 |
+
 ![g-code value vs rpm](https://raw.githubusercontent.com/Invary/cnc/main/img/spindle_rpm_682x476.png)
 
 
