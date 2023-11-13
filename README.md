@@ -86,11 +86,11 @@ Mono 8mm shaft NEMA23 motor, [23HS5628-8mm](https://s.click.aliexpress.com/e/_Dm
 
 The direction of motor rotation is not important because it can be changed by software.
 
-DIP switch setting of DM542 is **`1.0A`**, **`Full Current`**, **`25600`** steps. <br />
+DIP switch setting of DM542 is **`1.0A`**, **`Full Current`**, **`25600`** steps, **`on on on on off off off on`**. <br />
 The motor's rated current is 2.8 A, but it is better to keep the value small unless it is necessary because it generates more heat. <br />
 
 CNC3040Z's ball screw are SFU1605 with 5mm pitch. <br />
-In other words, the 25600 steps in DM542 are 5mm, so 5120 steps/mm. <br />
+In other words, the 25600 steps in DM542 are 5mm, so **`5120 steps/mm`**. <br />
 
 ![Connections for motors](https://raw.githubusercontent.com/Invary/cnc/main/img/connection_motor_960x896.png)
 
@@ -105,8 +105,8 @@ In other words, the 25600 steps in DM542 are 5mm, so 5120 steps/mm. <br />
 [WS55-180](https://s.click.aliexpress.com/e/_DeVVoub) is brushless spindle motor driver. <br />
 RPM can be manually set by volume (10k ohm) or automatically adjusted by G-CODE. <br />
 
-For automatic control, turn the PWM-ADJ volume to 0-10V PWM output before wiring. <br />
-To adjust, access GRBL board with a browser. Set speed value **`1000`** in spindle tab and press the **`On Fwd`** button. Then voltage is output to PWM-OUT pin. Turn the PWM-ADJ volume so that the output is 10V. <br />
+For automatic control, turn the **`PWM-ADJ`** volume to 0-10V PWM output before wiring. <br />
+To adjust, access GRBL board with a browser. Set speed value **`1000`** in spindle tab and press the **`On Fwd`** button. Then voltage is output to PWM-OUT pin. Turn the **`PWM-ADJ`** volume so that the output is 10V. <br />
 
 The direction of spindle rotation is important. Be sure to set correctly by change order U/V/W to U/W/V, etc., if in reverse. <br />
 ![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/spindle_direction_480x270.png)
@@ -117,6 +117,11 @@ The direction of spindle rotation is important. Be sure to set correctly by chan
 
 - Automatic control
 ![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/connection_spindle_auto_960x892.png)
+
+- Value in G-CODE vs RPM
+![g-code value vs rpm](https://raw.githubusercontent.com/Invary/cnc/main/img/spindle_rpm_682x476.png)
+
+
 
 <br />
 
@@ -174,7 +179,7 @@ Stand-alone processing is available by uploading g-code file in microSD. Upload 
 3. Set **`GRBL Reports:`** to **`Auto`** <br />
 4. Set endmill to the spindle. <br />
 5. Move spindle head to start position. <br />
-6. Press **`θXYZABC`** button, work coordinates set to zero. <br />
+6. Press **`⌀XYZABC`** button, work coordinates set to zero. <br />
 7. Start CNC machining. <br />
 
 If you want to abort, press pause and refresh button. <br />
@@ -190,7 +195,7 @@ It supports HID/serial protocol. So you can control CNC via serial port. <br />
 
 ## Serial connected CNC machining via wifi
 
-GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt), supports multiple wireless protocol. <br />
+GRBL board, [32bit 6axis CNC card](https://s.click.aliexpress.com/e/_DBUy0Rt) with firmware of [FluidNC](https://github.com/bdring/FluidNC), supports multiple wireless protocol. <br />
 So you can control CNC via wifi, and by using a wireless-serial port bridge with virtual serial port, it can be controlled like as wired connected CNC. <br />
 
 * Bluetooth/serial (not recommended) <br />
@@ -328,7 +333,7 @@ Looking at the PCB... there is some famous chips. We have not followed the schem
 - LM2576S: DC-DC converter, 3A. Maybe for laser power supply
 - 20P06: P-ch power MOSFET. Unknown
 
-![stage](https://raw.githubusercontent.com/Invary/cnc/main/img/grbl_board_chip_960x1396.png)
+![GRBL board's chips](https://raw.githubusercontent.com/Invary/cnc/main/img/grbl_board_chip_960x1396.png)
 
 <br />
 <br />
