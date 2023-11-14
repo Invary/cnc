@@ -118,7 +118,7 @@ The direction of spindle rotation is important. Be sure to set correctly by chan
 - Automatic control
 ![Auto control connections for spindle](https://raw.githubusercontent.com/Invary/cnc/main/img/connection_spindle_auto_960x892.png)
 
-- Value in G-CODE vs RPM
+- Value in G-CODE vs RPM (no load)
 
 | value |  rpm  |
 | ----: | ----: |
@@ -349,6 +349,30 @@ Looking at the PCB... there is some famous chips. We have not followed the schem
 ![GRBL board's chips](https://raw.githubusercontent.com/Invary/cnc/main/img/grbl_board_chip_960x1396.png)
 
 <br />
+
+## Probe
+
+Simple probe using a tactile switch. <br />
+
+![Probe](https://raw.githubusercontent.com/Invary/cnc/main/img/probe_480x270.png)
+![Probe](https://raw.githubusercontent.com/Invary/cnc/main/img/probe3_480x339.png)
+
+Parts list
+- x1 Probe base, 3D printed, [STL file](https://github.com/Invary/cnc/blob/main/model/3dprint/probe.stl)
+- x1 [Bakelite single side PCB](https://s.click.aliexpress.com/e/_Dkmlcjh), [DXF file](https://github.com/Invary/cnc/blob/main/model/3dprint/probe.dxf)
+- x1 Tactile switch [2.0mm height](https://s.click.aliexpress.com/e/_DmjSeC7)
+- x1 3.175mm broken endmill
+- x1 M3-10mm screw
+- x3 M2-10mm screw
+- x1 M3 nut
+- x3 M2 nut
+
+Generally, PCB pattern cutting is done by generating gcode from gerber and cutting with V-cutter. However, for a simple board like this, it is easier to use general CAD and endmill. <br />
+In this case, we used [0.5mm corn endmill](https://s.click.aliexpress.com/e/_DmQo5hh). <br />
+
+![Probe body](https://raw.githubusercontent.com/Invary/cnc/main/img/probe1_960x600.png)
+![Probe PCB pattern](https://raw.githubusercontent.com/Invary/cnc/main/img/probe2_960x433.png)
+
 <br />
 <br />
 <br />
